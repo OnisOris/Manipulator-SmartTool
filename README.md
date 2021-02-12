@@ -1,1 +1,2 @@
 # Manipulator-SmartTool
+#Цель проекта
