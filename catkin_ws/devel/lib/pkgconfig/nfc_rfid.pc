@@ -1,0 +1,8 @@
+prefix=/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/devel
+
+Name: nfc_rfid
+Description: Description of nfc_rfid
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

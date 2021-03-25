@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/install/setup.sh

@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/pi/rfid/env"
+set -gx VIRTUAL_ENV "/home/pi/Desktop/Manipulator-SmartTool/rfid/pi_reader/env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
