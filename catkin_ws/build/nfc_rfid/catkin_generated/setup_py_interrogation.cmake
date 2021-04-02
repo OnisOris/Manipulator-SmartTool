@@ -1,0 +1,7 @@
+set(nfc_rfid_SETUP_PY_SETUP_MODULE "distutils.core")
+set(nfc_rfid_SETUP_PY_VERSION "0.0.0")
+set(nfc_rfid_SETUP_PY_SCRIPTS "")
+set(nfc_rfid_SETUP_PY_PACKAGES "nfc_rfid")
+set(nfc_rfid_SETUP_PY_PACKAGE_DIRS "src/nfc_rfid")
+set(nfc_rfid_SETUP_PY_MODULES "")
+set(nfc_rfid_SETUP_PY_MODULE_DIRS "")
