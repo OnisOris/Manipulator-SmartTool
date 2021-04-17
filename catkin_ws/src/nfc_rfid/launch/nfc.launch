@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="nfc_rfid" type="talker.py" name="Talker"/>
+  <node pkg="nfc_rfid" type="listener.py" name="Listener" />
+</launch>
