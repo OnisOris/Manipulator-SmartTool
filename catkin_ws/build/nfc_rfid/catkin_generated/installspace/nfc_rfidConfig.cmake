@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(nfc_rfid_LIBRARIES ${nfc_rfid_LIBRARIES})
 
   _list_append_unique(nfc_rfid_LIBRARY_DIRS ${${nfc_rfid_dep}_LIBRARY_DIRS})
-  list(APPEND nfc_rfid_EXPORTED_TARGETS ${${nfc_rfid_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(nfc_rfid_EXPORTED_TARGETS ${${nfc_rfid_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

@@ -38,10 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/nfc_rfid/catkin_generated/safe_execute_install.cmake")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/nfc_rfid/catkin_generated/installspace/nfc_rfid.pc")
 endif()
 
@@ -66,5 +62,13 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/nfc_rfid" TYPE PROGRAM FILES "/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/nfc_rfid/catkin_generated/installspace/MFRC522.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/nfc_rfid" TYPE PROGRAM FILES "/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/nfc_rfid/catkin_generated/installspace/talker_master.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/nfc_rfid" TYPE PROGRAM FILES "/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/nfc_rfid/catkin_generated/installspace/listener_master.py")
 endif()
 

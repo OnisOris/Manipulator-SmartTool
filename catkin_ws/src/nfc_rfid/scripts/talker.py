@@ -420,7 +420,7 @@ def talker():
 
         # If a card is found
         if status == MIFAREReader.MI_OK:
-            print("Card detected")
+            pass
 
         # Get the UID of the card
         (status,uid) = MIFAREReader.MFRC522_Anticoll()
@@ -429,8 +429,8 @@ def talker():
         if status == MIFAREReader.MI_OK:
 
             # Print UID
-            str_uid = "Card read UID: %s%s%s%s" % (uid[0], uid[1], uid[2], uid[3])
-            rospy.loginfo(str_uid)
+            str_uid = "%s%s%s%s" % (uid[0], uid[1], uid[2], uid[3])
+            rospy.loginfo(rospy.get_caller_id()+ ' ' + str_uid)
             pub.publish(str_uid)
             #print("Card read UID: %s%s%s%s" % (uid[0], uid[1], uid[2], uid[3]))
 
@@ -438,7 +438,7 @@ def talker():
             key = [0xFF,0xFF,0xFF,0xFF,0xFF,0xFF]
 
             # Select the scanned tag
-            MIFAREReader.MFRC522_SelectTag(uid)
+            # MIFAREReader.MFRC522_SelectTag(uid)
 
             # Authenticate
             status = MIFAREReader.MFRC522_Auth(MIFAREReader.PICC_AUTHENT1A, 8, key, uid)

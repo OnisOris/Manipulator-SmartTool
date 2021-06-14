@@ -479,6 +479,136 @@ std_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f nfc_rfid/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make nfc_rfid/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
+#=============================================================================
+# Target rules for targets named _catkin_empty_exported_target
+
+# Build rule for target.
+_catkin_empty_exported_target: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
+.PHONY : _catkin_empty_exported_target
+
+# fast build rule for target.
+_catkin_empty_exported_target/fast:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/build.make kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/build
+.PHONY : _catkin_empty_exported_target/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_kuka_kr6_support
+
+# Build rule for target.
+run_tests_kuka_kr6_support: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_kuka_kr6_support
+.PHONY : run_tests_kuka_kr6_support
+
+# fast build rule for target.
+run_tests_kuka_kr6_support/fast:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/build
+.PHONY : run_tests_kuka_kr6_support/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_kuka_kr6_support
+
+# Build rule for target.
+_run_tests_kuka_kr6_support: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_kuka_kr6_support
+.PHONY : _run_tests_kuka_kr6_support
+
+# fast build rule for target.
+_run_tests_kuka_kr6_support/fast:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/build
+.PHONY : _run_tests_kuka_kr6_support/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_kuka_kr6_support_roslaunch-check
+
+# Build rule for target.
+_run_tests_kuka_kr6_support_roslaunch-check: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_kuka_kr6_support_roslaunch-check
+.PHONY : _run_tests_kuka_kr6_support_roslaunch-check
+
+# fast build rule for target.
+_run_tests_kuka_kr6_support_roslaunch-check/fast:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/build
+.PHONY : _run_tests_kuka_kr6_support_roslaunch-check/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml
+
+# Build rule for target.
+_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml
+.PHONY : _run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml
+
+# fast build rule for target.
+_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml/fast:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/build
+.PHONY : _run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_kuka_kr6_support_roslaunch-check
+
+# Build rule for target.
+run_tests_kuka_kr6_support_roslaunch-check: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_kuka_kr6_support_roslaunch-check
+.PHONY : run_tests_kuka_kr6_support_roslaunch-check
+
+# fast build rule for target.
+run_tests_kuka_kr6_support_roslaunch-check/fast:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/build
+.PHONY : run_tests_kuka_kr6_support_roslaunch-check/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml
+
+# Build rule for target.
+run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml
+.PHONY : run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml
+
+# fast build rule for target.
+run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml/fast:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/build
+.PHONY : run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml
+
+# Build rule for target.
+run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml
+.PHONY : run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml
+
+# fast build rule for target.
+run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml/fast:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/build
+.PHONY : run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml/fast
+
+#=============================================================================
+# Target rules for targets named clean_test_results_kuka_kr6_support
+
+# Build rule for target.
+clean_test_results_kuka_kr6_support: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results_kuka_kr6_support
+.PHONY : clean_test_results_kuka_kr6_support
+
+# fast build rule for target.
+clean_test_results_kuka_kr6_support/fast:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/build.make kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/build
+.PHONY : clean_test_results_kuka_kr6_support/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml
+
+# Build rule for target.
+_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml
+.PHONY : _run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml
+
+# fast build rule for target.
+_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml/fast:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/build
+.PHONY : _run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -516,6 +646,16 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... _catkin_empty_exported_target"
+	@echo "... run_tests_kuka_kr6_support"
+	@echo "... _run_tests_kuka_kr6_support"
+	@echo "... _run_tests_kuka_kr6_support_roslaunch-check"
+	@echo "... _run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml"
+	@echo "... run_tests_kuka_kr6_support_roslaunch-check"
+	@echo "... run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml"
+	@echo "... run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml"
+	@echo "... clean_test_results_kuka_kr6_support"
+	@echo "... _run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml"
 .PHONY : help
 
 

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot name="kuka_kr6r900sixx" xmlns:xacro="http://wiki.ros.org/xacro">
+    <xacro:include filename="$(find kuka_kr6_support)/urdf/kr6r900sixx_painter_macro.xacro" />
+    <xacro:kuka_kr6r900sixx prefix=""/>
+
+    <link name="holder_link">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </link>
+    <link name="camera_link">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </link>
+    <joint name="holder_joint" type="fixed">
+        <parent link="link_6"/>
+        <child link="holder_link"/>
+        <origin xyz="0.0319 0 0" rpy="0 0 0"/>
+    </joint>
+    <joint name="camera_joint" type="fixed">
+        <parent link="holder_link"/>
+        <child link="camera_link"/>
+        <origin xyz="0.0374 0 0" rpy="0 0 0"/>
+    </joint>
+    <!-- Brush origin xyz="0 0 -0.172" rpy="0 0 0" parent link="holder_link" -->
+</robot>

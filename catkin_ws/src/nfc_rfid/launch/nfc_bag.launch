@@ -1,0 +1,5 @@
+<launch>
+    <node name="bag_play" pkg="rosbag" type="play"
+        args="~/bagfiles/nfc_read.bag" />
+</launch>
+

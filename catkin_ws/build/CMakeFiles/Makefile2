@@ -55,12 +55,14 @@ CMAKE_BINARY_DIR = /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build
 # The main recursive "all" target.
 all: gtest/all
 all: nfc_rfid/all
+all: kuka_kr6_support/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: nfc_rfid/preinstall
+preinstall: kuka_kr6_support/preinstall
 
 .PHONY : preinstall
 
@@ -72,6 +74,7 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: nfc_rfid/clean
+clean: kuka_kr6_support/clean
 
 .PHONY : clean
 
@@ -131,6 +134,33 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest_main.dir/clean
 gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 
 .PHONY : gtest/googletest/clean
+
+#=============================================================================
+# Directory level rules for directory kuka_kr6_support
+
+# Recursive "all" directory target.
+kuka_kr6_support/all:
+
+.PHONY : kuka_kr6_support/all
+
+# Recursive "preinstall" directory target.
+kuka_kr6_support/preinstall:
+
+.PHONY : kuka_kr6_support/preinstall
+
+# Recursive "clean" directory target.
+kuka_kr6_support/clean: kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/clean
+kuka_kr6_support/clean: kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/clean
+kuka_kr6_support/clean: kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/clean
+kuka_kr6_support/clean: kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/clean
+kuka_kr6_support/clean: kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/clean
+kuka_kr6_support/clean: kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/clean
+kuka_kr6_support/clean: kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/clean
+kuka_kr6_support/clean: kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/clean
+kuka_kr6_support/clean: kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/clean
+kuka_kr6_support/clean: kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/clean
+
+.PHONY : kuka_kr6_support/clean
 
 #=============================================================================
 # Directory level rules for directory nfc_rfid
@@ -222,7 +252,7 @@ CMakeFiles/clean_test_results.dir/clean:
 # Target rules for target CMakeFiles/run_tests.dir
 
 # All Build rule for target.
-CMakeFiles/run_tests.dir/all:
+CMakeFiles/run_tests.dir/all: kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/all
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles --progress-num= "Built target run_tests"
@@ -812,6 +842,280 @@ std_msgs_generate_messages_lisp: nfc_rfid/CMakeFiles/std_msgs_generate_messages_
 nfc_rfid/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
 	$(MAKE) -f nfc_rfid/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make nfc_rfid/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 .PHONY : nfc_rfid/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir
+
+# All Build rule for target.
+kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/build.make kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/build.make kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
+.PHONY : kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/all
+
+# Build rule for subdir invocation for target.
+kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+.PHONY : kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+# Convenience name for target.
+_catkin_empty_exported_target: kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+.PHONY : _catkin_empty_exported_target
+
+# clean rule for target.
+kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/build.make kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : kuka_kr6_support/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+#=============================================================================
+# Target rules for target kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir
+
+# All Build rule for target.
+kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/all: kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/all
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/depend
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles --progress-num= "Built target run_tests_kuka_kr6_support"
+.PHONY : kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/all
+
+# Build rule for subdir invocation for target.
+kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+.PHONY : kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/rule
+
+# Convenience name for target.
+run_tests_kuka_kr6_support: kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/rule
+
+.PHONY : run_tests_kuka_kr6_support
+
+# clean rule for target.
+kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/clean:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/clean
+.PHONY : kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support.dir/clean
+
+#=============================================================================
+# Target rules for target kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir
+
+# All Build rule for target.
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/all: kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/all
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/depend
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles --progress-num= "Built target _run_tests_kuka_kr6_support"
+.PHONY : kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/all
+
+# Build rule for subdir invocation for target.
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+.PHONY : kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/rule
+
+# Convenience name for target.
+_run_tests_kuka_kr6_support: kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/rule
+
+.PHONY : _run_tests_kuka_kr6_support
+
+# clean rule for target.
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/clean:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/clean
+.PHONY : kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support.dir/clean
+
+#=============================================================================
+# Target rules for target kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir
+
+# All Build rule for target.
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/all: kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/all
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/all: kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/all
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/depend
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles --progress-num= "Built target _run_tests_kuka_kr6_support_roslaunch-check"
+.PHONY : kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/all
+
+# Build rule for subdir invocation for target.
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+.PHONY : kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/rule
+
+# Convenience name for target.
+_run_tests_kuka_kr6_support_roslaunch-check: kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/rule
+
+.PHONY : _run_tests_kuka_kr6_support_roslaunch-check
+
+# clean rule for target.
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/clean:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/clean
+.PHONY : kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check.dir/clean
+
+#=============================================================================
+# Target rules for target kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir
+
+# All Build rule for target.
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/all: CMakeFiles/tests.dir/all
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/all: kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/all
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/depend
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles --progress-num= "Built target _run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml"
+.PHONY : kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/all
+
+# Build rule for subdir invocation for target.
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+.PHONY : kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/rule
+
+# Convenience name for target.
+_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml: kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/rule
+
+.PHONY : _run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml
+
+# clean rule for target.
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/clean:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/clean
+.PHONY : kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/clean
+
+#=============================================================================
+# Target rules for target kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir
+
+# All Build rule for target.
+kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/all: kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/all
+kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/all: kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/all
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/depend
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles --progress-num= "Built target run_tests_kuka_kr6_support_roslaunch-check"
+.PHONY : kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/all
+
+# Build rule for subdir invocation for target.
+kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+.PHONY : kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/rule
+
+# Convenience name for target.
+run_tests_kuka_kr6_support_roslaunch-check: kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/rule
+
+.PHONY : run_tests_kuka_kr6_support_roslaunch-check
+
+# clean rule for target.
+kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/clean:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/clean
+.PHONY : kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check.dir/clean
+
+#=============================================================================
+# Target rules for target kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir
+
+# All Build rule for target.
+kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/all:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/depend
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles --progress-num= "Built target run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml"
+.PHONY : kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/all
+
+# Build rule for subdir invocation for target.
+kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+.PHONY : kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/rule
+
+# Convenience name for target.
+run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml: kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/rule
+
+.PHONY : run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml
+
+# clean rule for target.
+kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/clean:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/clean
+.PHONY : kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r700sixx.xml.dir/clean
+
+#=============================================================================
+# Target rules for target kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir
+
+# All Build rule for target.
+kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/all:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/depend
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles --progress-num= "Built target run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml"
+.PHONY : kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/all
+
+# Build rule for subdir invocation for target.
+kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+.PHONY : kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/rule
+
+# Convenience name for target.
+run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml: kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/rule
+
+.PHONY : run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml
+
+# clean rule for target.
+kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/clean:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/clean
+.PHONY : kuka_kr6_support/CMakeFiles/run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/clean
+
+#=============================================================================
+# Target rules for target kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir
+
+# All Build rule for target.
+kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/all:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/build.make kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/depend
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/build.make kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles --progress-num= "Built target clean_test_results_kuka_kr6_support"
+.PHONY : kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/all
+
+# Build rule for subdir invocation for target.
+kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+.PHONY : kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/rule
+
+# Convenience name for target.
+clean_test_results_kuka_kr6_support: kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/rule
+
+.PHONY : clean_test_results_kuka_kr6_support
+
+# clean rule for target.
+kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/clean:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/build.make kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/clean
+.PHONY : kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/clean
+
+#=============================================================================
+# Target rules for target kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir
+
+# All Build rule for target.
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/all: CMakeFiles/tests.dir/all
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/all: kuka_kr6_support/CMakeFiles/clean_test_results_kuka_kr6_support.dir/all
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/depend
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles --progress-num= "Built target _run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml"
+.PHONY : kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/all
+
+# Build rule for subdir invocation for target.
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/CMakeFiles 0
+.PHONY : kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/rule
+
+# Convenience name for target.
+_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml: kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/rule
+
+.PHONY : _run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml
+
+# clean rule for target.
+kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/clean:
+	$(MAKE) -f kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/build.make kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/clean
+.PHONY : kuka_kr6_support/CMakeFiles/_run_tests_kuka_kr6_support_roslaunch-check_test_roslaunch_test_kr6r900sixx.xml.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
