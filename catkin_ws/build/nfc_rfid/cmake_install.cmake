@@ -61,7 +61,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/nfc_rfid" TYPE PROGRAM FILES "/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/nfc_rfid/catkin_generated/installspace/cmd.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/nfc_rfid" TYPE PROGRAM FILES "/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/nfc_rfid/catkin_generated/installspace/MFRC522.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/nfc_rfid" TYPE PROGRAM FILES "/home/pi/Desktop/Manipulator-SmartTool/catkin_ws/build/nfc_rfid/catkin_generated/installspace/servo.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

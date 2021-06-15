@@ -162,7 +162,9 @@ include_directories(
 catkin_install_python(
     PROGRAMS scripts/talker.py 
              scripts/listener.py 
+             scripts/cmd.py 
              scripts/MFRC522.py
+             scripts/servo.py
              scripts/master/talker_master.py 
              scripts/master/listener_master.py 
     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}

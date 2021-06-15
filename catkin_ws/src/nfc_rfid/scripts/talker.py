@@ -443,6 +443,12 @@ def talker():
             # Authenticate
             status = MIFAREReader.MFRC522_Auth(MIFAREReader.PICC_AUTHENT1A, 8, key, uid)
 
+        else:
+            str_uid = "0"
+            rospy.loginfo(rospy.get_caller_id()+ ' ' + str_uid)
+            pub.publish(str_uid)
+
+
         rate.sleep()
 
 if __name__ == '__main__':

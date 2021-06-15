@@ -5,8 +5,19 @@
 import rospy
 from std_msgs.msg import String
 
+prev_uid = '0'
+is_Locked = False
 def callback(data):
+    global prev_uid
+    global is_Locked
+
+    pub = rospy.Publisher('command_line', String)
     rospy.loginfo(rospy.get_caller_id() + ' %s', data.data)
+    if not data.data == '0' and not is_Locked:
+        print(is_Locked)
+        pub.publish('Close')
+        is_Locked = True
+        prev_uid = data.data
 
 def listener():
 
